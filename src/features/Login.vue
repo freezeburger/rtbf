@@ -26,13 +26,16 @@
 </template>
 
 <script>
+import {ActionTypes} from '../store/action-types';
+
 export default {
   methods: {
     requestIdentification() {
       // KZK ?
-      console.log(
+      /* console.log(
         this.$store
-      );
+      ); */
+      this.$store.dispatch(ActionTypes.CONNECTION, this.credentials)
     }
   },
   data() {
