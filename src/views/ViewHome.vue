@@ -1,17 +1,22 @@
 <template>
-  <rtbf-layout title="Home">
-      <base-text TextType="Title1">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sit enim quae quisquam ad odit cumque ratione architecto ut hic.
-      </base-text>
+  <rtbf-layout title="Home" :scrollable="true">
+    <feature-login></feature-login>
+    <base-text
+      TextType="text"
+    >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sit enim quae quisquam ad odit cumque ratione architecto ut hic.</base-text>
   </rtbf-layout>
 </template>
 
 <script>
-export default {
+import FeatureLogin from "../features/Login.vue";
 
-}
+export default {
+  components: {
+    FeatureLogin
+  }
+};
 </script>
 
 <style>
-
 </style>
