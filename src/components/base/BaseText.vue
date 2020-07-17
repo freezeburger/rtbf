@@ -76,7 +76,7 @@ export default {
 <style scoped>
     .BaseText
     {
-        font-family: 'Courier New', Courier, monospace;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .TextDefault {
            font-size:12px;

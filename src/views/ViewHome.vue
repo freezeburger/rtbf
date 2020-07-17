@@ -1,6 +1,6 @@
 <template>
   <rtbf-layout title="Home">
-      <base-text>
+      <base-text TextType="Title1">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sit enim quae quisquam ad odit cumque ratione architecto ut hic.
       </base-text>
   </rtbf-layout>
