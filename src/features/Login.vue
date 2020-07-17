@@ -1,6 +1,10 @@
 <template>
   <base-card title="Login" class="w-100">
-    <code>{{credentials}}</code>
+    <code>{{$store.state.welcomeMessage}}</code>
+    
+    <base-speech 
+      :message="$store.state.welcomeMessage">
+    </base-speech>
 
     <base-input v-model="credentials.email" :validator="validators.email">
       <template #message>Your Email</template>
@@ -26,7 +30,9 @@ export default {
   methods: {
     requestIdentification() {
       // KZK ?
-      alert(123);
+      console.log(
+        this.$store
+      );
     }
   },
   data() {
