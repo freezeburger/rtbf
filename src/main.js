@@ -15,19 +15,5 @@ new Vue({
 
 
 //-------
-const URL = 'http://localhost:8000/auth/login'
-const options = {
-  method:'POST',
-  headers:{
-    'Content-Type': 'application/json'
-  },
-  body:JSON.stringify({
-    email:'bruno@email.com',
-    password:'bruno'
-  })
-}
 
-fetch(URL,options)
-  .then( res => res.json() )
-  .then( data => console.table(data) )
 
